@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+<!--Si el elemento va a aparecer en todas las paginas es mejor importarlo en el app.vue/ -->
+    <Navburger/> 
+     <router-view/>
   </div>
 </template>
 
+<script>
+import Navburger from '@/components/NavBurger.vue';
+
+export default {
+  name: 'app',
+   components: {
+    Navburger
+  }, 
+}
+</script>
 <style>
+/* global styles */
+body{
+  margin:   0;
+  padding:  0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,4 +42,6 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
+
