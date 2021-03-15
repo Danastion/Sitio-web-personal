@@ -85,7 +85,7 @@ export default {
 <style scoped>
 .color-fondo {
   background-color: #ff4400;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   border: 0;
 }

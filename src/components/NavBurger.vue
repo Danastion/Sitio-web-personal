@@ -33,7 +33,6 @@ export default {
   position: absolute;
   z-index: 3;
   display: flex;
-/*   height: 100vh; */
   top: 0;
   left: 0;
   
@@ -42,9 +41,9 @@ export default {
 .menu-content {
   box-sizing: border-box;
   list-style: none;
-  text-align: center;
+  text-align: left;
   margin: 0;
-  padding: 10px 20px;
+  padding: 0;
   line-height: 1.6;
 }
 

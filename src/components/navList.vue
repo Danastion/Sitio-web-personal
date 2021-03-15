@@ -2,12 +2,12 @@
 <!-- Nav Links -->
   <div id="app" class="nav-box">
     <ul v-if="showNav" class="nav-container">
-     <li @click="openNav"> <router-link to="/">Home</router-link> |</li>
-     <li @click="openNav"> <router-link to="/educacion">Educacion</router-link> | </li>
-     <li @click="openNav"> <router-link to="/habilidades">Habilidades</router-link> |</li>
-     <li @click="openNav"> <router-link to="/experiencia">Experiencia</router-link> |</li>
-     <li @click="openNav"> <router-link to="/conversemos">Conversemos</router-link> |</li>
-     <li @click="openNav"> <router-link to="/experiencia_b">EXPERIENCIA B</router-link> |</li>
+     <li @click="openNav"> <router-link to="/">Home</router-link></li>
+     <li @click="openNav"> <router-link to="/educacion">Educacion</router-link></li>
+     <li @click="openNav"> <router-link to="/habilidades">Habilidades</router-link></li>
+     <li @click="openNav"> <router-link to="/experiencia">Experiencia</router-link></li>
+     <li @click="openNav"> <router-link to="/conversemos">Conversemos</router-link></li>
+     <li @click="openNav"> <router-link to="/experiencia_b">EXPERIENCIA B</router-link></li>
     </ul>
     <button v-show="showNav" class="nav-close" @click="openNav">X</button>
 
@@ -45,18 +45,19 @@ export default {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+  margin: 0;
   background: rgb(199, 9, 31, 0.4);
 }
 .nav-close {
-  color: rgba(197, 6, 27, 0.6);
+  color: rgba(9, 255, 0, 0.6);
   background-color: transparent;
   border: none;
-  margin: 20px 30px;
+  margin: 0;
   font-size: 30px;
   font-weight: 300;
   position: absolute;
   top: 0;
-  right: 0;
+  right:0 ;
 }
 
 .nav-close:hover {
@@ -69,7 +70,6 @@ li {
   font-size: 40px;
   font-weight: 300;
   padding: 12px 0 0 0;
-  text-shadow: 2px 2px 2px gray;
 }
 
 li:not(:last-child) {
