@@ -11,7 +11,7 @@
     </ul>
     <button v-show="showNav" class="nav-close" @click="openNav">X</button>
 
-    <div class="box">
+    <div>
       <button v-if ="!showNav" class="hamburger-menu" @click="openNav">&#9776;</button>
     </div>
   </div>
@@ -34,86 +34,7 @@ export default {
 }
 
 </script>
-
 <style scoped>
-.nav-box{
-  background-color: bisque;
-}
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background: rgb(199, 9, 31, 0.4);
-}
-.nav-close {
-  color: rgba(9, 255, 0, 0.6);
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
-  position: absolute;
-  top: 0;
-  right:0 ;
-}
-
-.nav-close:hover {
-  background-color: white;
-  border-radius: 25px;
-}
 
 
-li {
-  font-size: 40px;
-  font-weight: 300;
-  padding: 12px 0 0 0;
-}
-
-li:not(:last-child) {
-  border-bottom: 1px solid rgba(197, 6, 27, 0.3);
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  background: teal;
-  padding: 0 40px;
-  border-radius: 5px;
-}
-
-.nav-close {
-  color: rgba(197, 6, 27, 0.6);
-  background-color: transparent;
-  border: none;
-  margin: 20px 30px;
-  font-size: 30px;
-  font-weight: 300;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.nav-close:hover {
-  background-color: white;
-  border-radius: 25px;
-}
-
-.hamburger-menu {
-  float: right;
-  padding: 10px 15px;
-  font-size: 20px;
-  border-radius: 5px;
-  background-color: white;
-  color: rgba(197, 6, 27, 0.6);
-}
-
-h2 {
-  color: teal;
-}
 </style>
