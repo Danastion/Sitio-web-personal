@@ -1,28 +1,54 @@
 /* global styles */
 
 /* override browser default */
-html,
-body {
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+font-size: 100%;
+}
+
+body
+{
+line-height: 1;
+font-size: 88%;
+}
+ 
+h1, h2, h3, h4, h5, h6
+{
+font-size: 100%;
+padding: .3em 0;
+}
+ 
+ul, ol
+{
+list-style: none;
+}
+ 
+img
+{
+border: 0;
+}
+
+/* Seccion app*/  
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  background-color: blue;
-}
-
-/* use viewport-relative units to cover page fully */
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
-/* include border and padding in element width and height */
-* {
   box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
 }
 
 /* Seccion nav */
 .nav-box{
-  background-color: bisque;
+  background-color:#FF4400;
 }
 .nav-container {
   display: flex;
@@ -31,7 +57,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: rgb(199, 9, 31, 0.4); background-color: rgb(#ff4400);
+  background-color: rgb(#ff4400);
 }
 
 .nav-close {
@@ -81,15 +107,16 @@ a:hover {
 .menu {
   position: absolute;
   z-index: 3;
-  /* display: flex; */
+  display: flex;
   top: 0;
   right: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .menu-content {
   box-sizing: border-box;
   list-style: none;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -104,15 +131,6 @@ a:hover {
     color: rgba(197, 6, 27, 0.6);
   }
 
-/* Seccion app*/  
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
 #nav { padding: 30px;}
 
@@ -133,4 +151,5 @@ h2 {
 .color-fondo {
     background-color: #ff4400;
     height: 100vh;
+    width: 100vw;
 }

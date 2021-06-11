@@ -1,12 +1,14 @@
 <template>
 <div class="menu">
+  <header>
  <!-- Hamburger Menu -->  
     <div>
       <div class="menu-background"></div>
       <ul class="menu-content">
           <slot><nav-list/></slot>
-      </ul>
+      </ul>    
 </div>
+</header>
 </div>
 </template> 
 
