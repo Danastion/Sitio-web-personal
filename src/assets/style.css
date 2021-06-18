@@ -70,10 +70,10 @@ border: 0;
     position: absolute;
     top: 0;
     right: 0;
-  }
+}
 
 .nav-close:hover {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 25px;
 }
 
@@ -110,7 +110,8 @@ a:hover {
   display: flex;
   top: 0;
   right: 0;
-  background-color: rgb(255, 255, 255);
+  overflow-y: hidden;
+  /* background-color: rgb(255, 255, 255); */
 }
 
 .menu-content {
@@ -127,7 +128,7 @@ a:hover {
     padding: 10px 15px;
     font-size: 20px;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: white; */
     color: rgba(197, 6, 27, 0.6);
   }
 

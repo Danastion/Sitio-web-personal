@@ -3,6 +3,7 @@
     <section class="container">
       <div class="item-left">
         <img :src="image" class="imagen" />
+        <div class="circulo"></div>
       </div>
 
       <div class="item-right">
@@ -49,7 +50,7 @@ export default {
 .item-left {
   flex: 50%;
   margin-top: 100px;
-  background-color: blueviolet;
+/*   background-color: blueviolet; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,9 +70,18 @@ export default {
   text-align: left;
 }
 
+.circulo{
+  position: absolute;
+  width: 400px;
+  height:400px;
+  background: #8AC007;
+  border-radius: 1000px;
+  z-index:-1;
+}
+
 .imagen {
 width: 60%;
-background-color: brown; 
+/* background-color: brown;  */
 
 }
 
